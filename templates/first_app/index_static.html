@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>file</title>
+    <link rel="stylesheet" href="{% static 'css/mystyle_red.css' %}"/>
+    <!--<link rel="stylesheet" href="{% static 'css/mystyle_blue.css' %}"/>-->
+    <link rel="stylesheet" href="{% static 'css/mystyle_green.css' %}"/>
+  </head>
+<body>
+    <h1>This is a picture</h1>
+
+    {{ insert_me_static }}
+    <img src="{% static 'images/first_app/My Profile pic.jpg' %}" alt="Uh Oh, didn't show!">
+    <img src="{% static 'images/first_app/img.jpg' %}" >
+
+    <img src="{% static 'images/first_app/img.jpg' %}" alt="Uh Oh, didn't show!">
+
+{{ static }}
+</body>
+</html>
